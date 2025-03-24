@@ -7,7 +7,7 @@ import sys
 
 def setParameters(modele):
     modele.setParam('Threads', 1)
-    # modele.setParam("OutputFlag", 0)  # Désactive complètement la sortie
+    modele.setParam("OutputFlag", 0)  # Désactive complètement la sortie
     modele.setParam("TimeLimit", 3600)  # Limite de temps en secondes
     modele.setParam("MIPGap", 1e-10)  # Tolérance sur l'écart MIP
 
@@ -488,7 +488,6 @@ def createModel_surcharge_pmedian(nnodes, p, nbS, maxDist, distances, capacity, 
 
 
 
-
 if __name__ == "__main__":
     assert(len(sys.argv) == 4), "Usage: python solver.py <filename> <objectiveFunction> <csv>"
     assert(sys.argv[2] == "AB" or sys.argv[2] == "A" or sys.argv[2] == "B"), "objectiveFunction must be AB, A or B"
@@ -503,23 +502,6 @@ if __name__ == "__main__":
     print("nnodes = ", nnodes)
     print("p = ", p)
     print("nbS = ", nbS)
-
-    # somme des demandes de la première strate
-    total_demande = 0
-    total_capacite = 0
-    id = 0
-    for i in range(nnodes):
-        if stratum[i,0] == 1:
-            total_demande += demand[i,0]
-        if stratumCenter[i,0] == 1:
-            total_capacite += capacity[i,0]
-            id += 1
-    print("Somme des demandes de la première strate : ", total_demande)
-    print("Somme des capacités de la première strate : ", total_capacite)
-    print("Moyenne des capacités de la première strate : ", total_capacite/id)
-    print("facteur capacite/demande/id : ", total_capacite/id/total_demande)
-    print("facteur capacite/demande : ", total_capacite/total_demande)
-    print("id : ", id)
     
 
     pprint.pprint(alpha)
@@ -570,151 +552,120 @@ if __name__ == "__main__":
             f.write(f"{sys.argv[1]}\t{objectiveFunction}\tUNBOUNDED\n") 
     elif modele.status != GRB.OPTIMAL and modele.status != GRB.SUBOPTIMAL and modele.status != GRB.TIME_LIMIT:
         print("Problème non résolu")
-        
-
-    # sauvegarde de la solution
-    # modele.write("solution.sol")
+    
 
     print(f"Il y a eu {modele.NodeCount} noeuds explorés")
     print(f"Temps de calcul : {modele.Runtime} secondes")
-    # print(f"Gap : {modele.MIPGap * 100}%")
-
-    # print(f"Borne inférieure : {modele.ObjBound}")
-    # print(f"Borne supérieure : {modele.ObjVal}")
 
     if modele.status == GRB.OPTIMAL:
         print("Solution optimale")
-    else:
+        feasibility = "Optimal"
+    elif modele.status == GRB.SUBOPTIMAL:
+        print("Solution suboptimale")
+        feasibility = "Suboptimal"
+        print("Solution faisable ou suboptimal : ", modele.SolCount, " solutions trouvées")
+    elif modele.status == GRB.TIME_LIMIT:
+        print("Temps limite atteint")
+        feasibility = "TimeLimit"
         print("Solution faisable ou suboptimal : ", modele.SolCount, " solutions trouvées")
 
 
-    val_x = modele.getAttr('X', x)
-    val_w = modele.getAttr('X', w)
+    
 
-    print("VALEUR DE Y :")
-    val_y = modele.getAttr('X', y)
-    for i in range(nnodes):
-        if val_y[i] == 1:
-            print(f"y[{i}] = {val_y[i]}")
+    # print("VALEUR DE Y :")
+    # val_y = modele.getAttr('X', y)
+    # for i in range(nnodes):
+    #     if val_y[i] == 1:
+    #         print(f"y[{i}] = {val_y[i]}")
 
-    print("VALEUR DE X :")
-    id = 0
-    for s in range(nbS):
-        for i in range(nnodes):
-            for j in range(nnodes):
-                if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
-                    if val_x[id] == 1:
-                        print(f"x[{s},{i},{j}] = {val_x[id]} | distance = {distances[i,j]} | demande = {demand[j,s]} | capacité = {capacity[i,s]}")
-                    id += 1
-    print("VALEUR DE W :")
-    id = 0
-    for s in range(nbS):
-        for i in range(nnodes):
-            for j in range(nnodes):
-                if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
-                    if val_w[id] == 1:
-                        print(f"w[{s},{i},{j}] = {val_w[id]} | distance = {distances[i,j]} | demande = {demand[j,s]} | capacité = {capacity[i,s]}")
-                    id += 1
-
-
-    # calcul des valeurs de As et Bs en fonction des x et w
-    id = 0
-    val_As = np.zeros(nbS)
-    val_Bs = np.zeros(nbS)
-    for s in range(nbS):
-        for i in range(nnodes):
-            for j in range(nnodes):
-                if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
-                    if val_x[id] == 1 and val_As[s] < distances[i,j]:
-                        val_As[s] = distances[i,j]
-                    if val_w[id] == 1 and val_Bs[s] < distances[i,j]:
-                        val_Bs[s] = distances[i,j]
-                    id += 1
-
-    val_As2 = np.zeros(nbS)
-    val_Bs2 = np.zeros(nbS)
-
-    nbPerS = np.zeros(nbS)
-    for s in range(nbS):
-        for i in range(nnodes):
-            if stratum[i,s] == 1:
-                nbPerS[s] += 1
-
-    pprint.pprint(nbPerS)
-
+    # print("VALEUR DE X :")
     # id = 0
     # for s in range(nbS):
-    #     expr = 0
     #     for i in range(nnodes):
-    #         if stratum[i,s] == 1:
-    #             for j in range(nnodes):
-    #                 if stratumCenter[j,s] == 1:
-    #                     expr += distances[i,j] * val_x[id]
-    #                     id += 1
-    #     val_As2[s] = round(expr / nbPerS[s], 2)
-
-    id = 0
-    for s in range(nbS):
-        for i in range(nnodes):
-            for j in range(nnodes):
-                if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
-                    if val_x[id] == 1 :
-                        val_As2[s] += distances[i,j]
-                    if val_w[id] == 1 :
-                        val_Bs2[s] += distances[i,j]
-                    id += 1
-
-    for s in range(nbS):
-        val_As2[s] = round(val_As2[s] / nbPerS[s], 2)
-        val_Bs2[s] = round(val_Bs2[s] / nbPerS[s], 2)
-    
-
+    #         for j in range(nnodes):
+    #             if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
+    #                 if val_x[id] == 1:
+    #                     print(f"x[{s},{i},{j}] = {val_x[id]} | distance = {distances[i,j]} | demande = {demand[j,s]} | capacité = {capacity[i,s]}")
+    #                 id += 1
+    # print("VALEUR DE W :")
     # id = 0
     # for s in range(nbS):
-    #     expr = 0
     #     for i in range(nnodes):
-    #         if stratum[i,s] == 1:
-    #             for j in range(nnodes):
-    #                 if stratumCenter[j,s] == 1:
-    #                     expr += distances[i,j] * val_w[id]
-    #                     id += 1
-    #     val_Bs2[s] = round(expr / nbPerS[s], 2)
+    #         for j in range(nnodes):
+    #             if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
+    #                 if val_w[id] == 1:
+    #                     print(f"w[{s},{i},{j}] = {val_w[id]} | distance = {distances[i,j]} | demande = {demand[j,s]} | capacité = {capacity[i,s]}")
+    #                 id += 1
+
+    if modele.status == GRB.OPTIMAL or modele.status == GRB.SUBOPTIMAL or modele.status == GRB.TIME_LIMIT and modele.SolCount > 0:
+        val_x = modele.getAttr('X', x)
+        val_w = modele.getAttr('X', w)
+
+        # calcul des valeurs de As et Bs en fonction des x et w
+        id = 0
+        val_As = np.zeros(nbS)
+        val_Bs = np.zeros(nbS)
+        val_As_pmedian = np.zeros(nbS)
+        val_Bs_pmedian = np.zeros(nbS)
+
+        nbPerS = np.zeros(nbS)
+        for s in range(nbS):
+            for i in range(nnodes):
+                if stratum[i,s] == 1:
+                    nbPerS[s] += 1
+
+        for s in range(nbS):
+            for i in range(nnodes):
+                for j in range(nnodes):
+                    if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
+                        if val_x[id] == 1 and val_As[s] < distances[i,j]:
+                            val_As[s] = distances[i,j]
+                        if val_w[id] == 1 and val_Bs[s] < distances[i,j]:
+                            val_Bs[s] = distances[i,j]
+
+                        if val_x[id] == 1:
+                            val_As_pmedian[s] += distances[i,j]
+                        if val_w[id] == 1:
+                            val_Bs_pmedian[s] += distances[i,j]
+                        id += 1
+
+        for s in range(nbS):
+            val_As_pmedian[s] = round(val_As_pmedian[s] / nbPerS[s], 2)
+            val_Bs_pmedian[s] = round(val_Bs_pmedian[s] / nbPerS[s], 2)
+
+
+        print("VALEUR DE As :")
+        pprint.pprint(val_As)
+
+        print("VALEUR DE Bs :")
+        pprint.pprint(val_Bs)
+
+        print("VALEUR DE As pmedian :")
+        pprint.pprint(val_As_pmedian)
+
+        print("VALEUR DE Bs pmedian :")
+        pprint.pprint(val_Bs_pmedian)
+
+        print("Somme des As : ", sum(val_As))
+        print("Somme des Bs : ", sum(val_Bs))
+        print("Somme des As + Bs : ", sum(val_As) + sum(val_Bs))
+        print("Somme des As2 : ", sum(val_As_pmedian))
+        print("Somme des Bs2 : ", sum(val_Bs_pmedian))
+        print("Somme des As2 + Bs2 : ", round(sum(val_As_pmedian) + sum(val_Bs_pmedian), 2))
+        
+        if objectiveFunction == "AB":
+            objVal = sum(val_As) + sum(val_Bs)
+            print("Valeur de la fonction objectif : ", sum(val_As) + sum(val_Bs))
+        elif objectiveFunction == "A":
+            objVal = sum(val_As)
+            print("Valeur de la fonction objectif : ", sum(val_As))
+        elif objectiveFunction == "B":
+            objVal = sum(val_Bs)
+            print("Valeur de la fonction objectif : ", sum(val_Bs))
 
 
 
-    print("VALEUR DE As :")
-    pprint.pprint(val_As)
-
-    print("VALEUR DE Bs :")
-    pprint.pprint(val_Bs)
-
-    print("VALEUR DE As2 :")
-    pprint.pprint(val_As2)
-
-    print("VALEUR DE Bs2 :")
-    pprint.pprint(val_Bs2)
-
-    print("Somme des As : ", sum(val_As))
-    print("Somme des Bs : ", sum(val_Bs))
-    print("Somme des As + Bs : ", sum(val_As) + sum(val_Bs))
-    print("Somme des As2 : ", sum(val_As2))
-    print("Somme des Bs2 : ", sum(val_Bs2))
-    print("Somme des As2 + Bs2 : ", round(sum(val_As2) + sum(val_Bs2), 2))
-    
-    if objectiveFunction == "AB":
-        objVal = sum(val_As) + sum(val_Bs)
-        print("Valeur de la fonction objectif : ", sum(val_As) + sum(val_Bs))
-    elif objectiveFunction == "A":
-        objVal = sum(val_As)
-        print("Valeur de la fonction objectif : ", sum(val_As))
-    elif objectiveFunction == "B":
-        objVal = sum(val_Bs)
-        print("Valeur de la fonction objectif : ", sum(val_Bs))
-
-
-
-    # écriture des résultats dans un fichier au format csv (chaque ligne une instance)
-    
-    if modele.status == GRB.OPTIMAL or modele.status == GRB.SUBOPTIMAL:
+        # écriture des résultats dans un fichier au format csv (chaque ligne une instance)
+        # [nom instance] [nombre de noeuds] [nombre de centres] [nombre de strates] [Faisabilité] [Temps] [fonction objective] [Somme des A] [Somme des B] [Somme des AB] [Nombre de noeuds explorés] [valeur objective linéaire] [GAP] [Somme des A pmedian] [Somme des B pmedian] [Somme des AB pmedian]
         with open(csv_file, "a") as f:
-            f.write(f"{sys.argv[1]}\t{objectiveFunction}\t{objVal}\t{modele.Runtime}\t{modele.NodeCount}\n")
+            f.write(f"{sys.argv[1]}\t{nnodes}\t{p}\t{nbS}\t{feasibility}\t{modele.Runtime}\t{objectiveFunction}\t{sum(val_As)}\t{sum(val_Bs)}\t{sum(val_As) + sum(val_Bs)}\t{modele.NodeCount}\t{modele.ObjBound}\t{modele.MIPGap}\t{round(sum(val_As_pmedian), 2)}\t{round(sum(val_Bs_pmedian), 2)}\t{round(sum(val_As_pmedian) + sum(val_Bs_pmedian), 2)}\n")

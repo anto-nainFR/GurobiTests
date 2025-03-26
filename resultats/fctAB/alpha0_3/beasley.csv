@@ -1,0 +1,92 @@
+Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap	 As_pmedian	 Bs_pmedian	 As+Bs_pmedian
+../instancesSurcharges/alpha0_3/Beasley/p10_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p10_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p10_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p10_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p10_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p11_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p11_2.txt	100	10	5	Optimal	1503.6488890647888	B	185.0	206.0	391.0	6582.0	206.0	0.0	90.22	156.49	246.71
+../instancesSurcharges/alpha0_3/Beasley/p11_3.txt	100	10	10	Optimal	837.9323699474335	B	379.0	409.0	788.0	716.0	409.0	0.0	199.93	317.03	516.96
+../instancesSurcharges/alpha0_3/Beasley/p11_4.txt	100	10	15	TimeLimit	3600.016139984131	B	668.0	695.0	1363.0	10123.0	676.0	0.027338129496402876	296.85	489.03	785.88
+../instancesSurcharges/alpha0_3/Beasley/p12_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p12_2.txt	100	10	5	Optimal	1606.0167319774628	B	183.0	204.0	387.0	2783.0	204.0	0.0	79.74	145.13	224.87
+../instancesSurcharges/alpha0_3/Beasley/p12_5.txt	100	10	20	TimeLimit	3600.023540019989	B	763.0	894.0	1657.0	568.0	731.0	0.18232662192393737	369.65	565.9	935.55
+../instancesSurcharges/alpha0_3/Beasley/p13_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p13_2.txt	100	10	5	Optimal	2465.8649339675903	B	193.0	206.0	399.0	2775.0	206.0	0.0	80.06	142.59	222.65
+../instancesSurcharges/alpha0_3/Beasley/p13_3.txt	100	10	10	TimeLimit	3600.0111050605774	B	378.0	430.0	808.0	6074.0	410.0	0.046511627906976744	173.35	311.36	484.71
+../instancesSurcharges/alpha0_3/Beasley/p13_4.txt	100	10	15	TimeLimit	3600.0293068885803	B	625.0	782.0	1407.0	1842.0	512.0	0.3452685421994885	288.46	518.96	807.42
+../instancesSurcharges/alpha0_3/Beasley/p14_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p14_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p14_3.txt	100	10	10	Optimal	1145.1919720172882	B	445.0	502.0	947.0	3897.0	502.0	0.0	190.35	349.07	539.42
+../instancesSurcharges/alpha0_3/Beasley/p14_4.txt	100	10	15	Optimal	1281.6861939430237	B	548.0	668.0	1216.0	771.0	668.0	0.0	260.19	472.76	732.95
+../instancesSurcharges/alpha0_3/Beasley/p14_5.txt	100	10	20	Optimal	3442.8812119960785	B	1091.0	1327.0	2418.0	1151.0	1327.0	0.0	359.68	770.06	1129.74
+../instancesSurcharges/alpha0_3/Beasley/p15_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p15_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p15_3.txt	100	10	10	TimeLimit	3600.0141439437866	B	361.0	430.0	791.0	7879.0	407.0	0.053488372093023255	169.07	318.82	487.89
+../instancesSurcharges/alpha0_3/Beasley/p15_4.txt	100	10	15	TimeLimit	3600.0292789936066	B	573.0	648.0	1221.0	716.0	522.0	0.19444444444444445	237.25	482.54	719.79
+../instancesSurcharges/alpha0_3/Beasley/p16_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p16_2.txt	100	10	5	Optimal	1145.8424241542816	B	190.0	218.0	408.0	9231.0	218.0	0.0	80.23	159.02	239.25
+../instancesSurcharges/alpha0_3/Beasley/p16_3.txt	100	10	10	TimeLimit	3600.0131459236145	B	322.0	386.0	708.0	2687.0	361.0	0.06476683937823834	160.53	286.3	446.83
+../instancesSurcharges/alpha0_3/Beasley/p16_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p17_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p17_2.txt	100	10	5	Optimal	602.478658914566	B	216.0	249.0	465.0	13220.0	249.0	0.0	97.1	180.25	277.35
+../instancesSurcharges/alpha0_3/Beasley/p17_3.txt	100	10	10	TimeLimit	3600.0124020576477	B	408.0	450.0	858.0	6001.0	446.0	0.008888888888888889	193.11	321.95	515.06
+../instancesSurcharges/alpha0_3/Beasley/p17_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p18_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p18_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p18_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p18_4.txt	100	10	15	TimeLimit	3600.0205891132355	B	563.0	618.0	1181.0	656.0	525.0	0.15048543689320387	263.61	449.24	712.85
+../instancesSurcharges/alpha0_3/Beasley/p18_5.txt	100	10	20	TimeLimit	3601.062632083893	B	800.0	876.0	1676.0	655.0	700.0	0.2009132420091324	351.88	618.53	970.41
+../instancesSurcharges/alpha0_3/Beasley/p19_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p19_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p19_3.txt	100	10	10	Optimal	2982.4401099681854	B	407.0	442.0	849.0	3133.0	442.0	0.0	194.5	318.5	513.0
+../instancesSurcharges/alpha0_3/Beasley/p19_4.txt	100	10	15	Optimal	2084.193869829178	B	746.0	787.0	1533.0	5342.0	787.0	0.0	332.49	559.52	892.01
+../instancesSurcharges/alpha0_3/Beasley/p1_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p1_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p1_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p1_4.txt	50	5	15	Optimal	244.59236192703247	B	628.0	793.0	1421.0	805.0	793.0	0.0	293.84	559.29	853.13
+../instancesSurcharges/alpha0_3/Beasley/p1_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p20_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p20_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p20_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p20_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p2_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p2_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p2_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p2_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p2_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p3_1.txt	50	5	3	Optimal	53.371132135391235	B	146.0	163.0	309.0	1571.0	163.0	0.0	71.0	110.53	181.53
+../instancesSurcharges/alpha0_3/Beasley/p3_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p3_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p3_4.txt	50	5	15	Optimal	113.38700795173645	B	771.0	829.0	1600.0	247.0	829.0	0.0	317.82	628.31	946.13
+../instancesSurcharges/alpha0_3/Beasley/p3_5.txt	50	5	20	Optimal	533.5116488933563	B	1002.0	1331.0	2333.0	2635.0	1331.0	0.0	469.55	918.99	1388.54
+../instancesSurcharges/alpha0_3/Beasley/p4_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p4_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p4_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p4_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p4_5.txt	50	5	20	Optimal	201.11453104019165	B	1029.0	1183.0	2212.0	1056.0	1183.0	0.0	584.47	880.6	1465.07
+../instancesSurcharges/alpha0_3/Beasley/p5_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p5_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p5_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p5_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p5_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p6_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p6_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p6_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p6_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p6_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p7_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p7_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p7_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p7_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p7_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p8_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p8_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p8_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p8_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p8_5.txt	50	5	20	Optimal	396.9082360267639	B	1090.0	1210.0	2300.0	825.0	1210.0	0.0	531.5	908.73	1440.23
+../instancesSurcharges/alpha0_3/Beasley/p9_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p9_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p9_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p9_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_3/Beasley/p9_5.txt	B	INFEASIBLE

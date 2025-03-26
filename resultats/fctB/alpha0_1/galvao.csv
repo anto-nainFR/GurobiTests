@@ -1,0 +1,35 @@
+Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap	 As_pmedian	 Bs_pmedian	 As+Bs_pmedian
+../instancesSurcharges/alpha0_1/GalvaoData/G1_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G1_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G1_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G1_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G1_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G2_1.txt	100	5	3	Optimal	124.11037397384644	B	359.0	400.0	759.0	764.0	400.0	0.0	241.18	321.9	563.08
+../instancesSurcharges/alpha0_1/GalvaoData/G2_2.txt	100	5	5	TimeLimit	3600.007609128952	B	585.0	641.0	1226.0	2873.0	600.0	0.06396255850234009	383.92	530.67	914.59
+../instancesSurcharges/alpha0_1/GalvaoData/G2_3.txt	100	5	10	Optimal	2157.4318039417267	B	1066.0	1118.0	2184.0	908.0	1118.0	0.0	704.53	939.84	1644.37
+../instancesSurcharges/alpha0_1/GalvaoData/G2_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G3_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G3_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G3_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G3_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G3_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G4_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G4_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G4_3.txt	100	10	10	Optimal	1360.8620359897614	B	976.0	994.0	1970.0	1921.0	994.0	0.0	649.52	908.63	1558.15
+../instancesSurcharges/alpha0_1/GalvaoData/G4_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G5_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G5_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G5_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G5_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G5_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G6_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G6_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G6_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G7_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G7_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G7_3.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G7_4.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G7_5.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G8_1.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G8_2.txt	B	INFEASIBLE
+../instancesSurcharges/alpha0_1/GalvaoData/G8_4.txt	B	INFEASIBLE

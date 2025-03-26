@@ -1,1 +1,19 @@
 Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap	 As_pmedian	 Bs_pmedian	 As+Bs_pmedian
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G1_1.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G1_2.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G1_3.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G1_4.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G1_5.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G2_1.txt	100	5	3	Optimal	93.73411893844604	A	337.0	496.0	833.0	622.0	337.0	0.0	244.46	365.19	609.65
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G2_2.txt	100	5	5	Optimal	3131.546205997467	A	511.0	780.0	1291.0	2278.0	511.0	0.0	370.86	566.88	937.74
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G2_3.txt	100	5	10	Optimal	1645.3882620334625	A	1004.0	1689.0	2693.0	808.0	1004.0	0.0	699.83	1116.21	1816.04
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G2_4.txt	100	5	15	TimeLimit	3600.016252040863	A	1629.0	2444.0	4073.0	398.0	1459.0	0.1043585021485574	1130.14	1709.63	2839.77
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G2_5.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G3_1.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G3_2.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G3_3.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G3_4.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G3_5.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G4_1.txt	100	10	3	Optimal	576.929447889328	A	278.0	519.0	797.0	2614.0	278.0	0.0	191.79	352.33	544.12
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G4_2.txt	A	INFEASIBLE
+../instancesSurcharges/alpha_aleatoire/GalvaoData/G4_3.txt	100	10	10	Optimal	379.9183931350708	A	963.0	1512.0	2475.0	1321.0	963.0	0.0	666.72	1135.59	1802.31

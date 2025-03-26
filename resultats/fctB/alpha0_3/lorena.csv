@@ -14,3 +14,5 @@ Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds
 ../instancesSurcharges/alpha0_3/Lorena/SJC3b_5.dat	B	INFEASIBLE
 ../instancesSurcharges/alpha0_3/Lorena/SJC4a_1.dat	402	30	3	TimeLimit	3600.092283010483	B	1587.0	2922.0	4509.0	1.0	1004.0	0.6563997262149213	637.17	1294.99	1932.16
 ../instancesSurcharges/alpha0_3/Lorena/SJC4a_2.dat	402	30	5	TimeLimit	3600.1949439048767	B	10818.0	12259.0	23077.0	1.0	1622.0	0.8676890447834245	1902.3	4096.45	5998.75
+../instancesSurcharges/alpha0_3/Lorena/SJC4b_1.dat	402	40	3	TimeLimit	3600.0879209041595	B	2567.0	2877.0	5444.0	1.0	980.0	0.6593673965936739	693.54	1466.09	2159.63
+../instancesSurcharges/alpha0_3/Lorena/SJC4b_2.dat	402	40	5	TimeLimit	3600.1156902313232	B	6439.0	8259.0	14698.0	1.0	1505.0	0.8177745489768737	1277.14	3338.65	4615.79

@@ -11,7 +11,11 @@ def setParameters(modele):
     modele.setParam("TimeLimit", 3600)  # Limite de temps en secondes
     modele.setParam("MIPGap", 1e-10)  # Tolérance sur l'écart MIP
 
-    # model.setParam("SolutionLimit", 1)  # Arrête après 1 solution faisable trouvée
+    modele.setParam("MIPFocus",1)
+    modele.setParam("MIPSepCuts",0)
+    modele.setParam("Method",1)
+
+    # modele.setParam("SolutionLimit", 1)  # Arrête après 1 solution faisable trouvée
     # modele.setParam("Presolve", 0)
     return modele
 
@@ -205,7 +209,7 @@ def createModel(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, s
     return modele, x, w, y, As, Bs
 
 
-def createModel_surcharge(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, objectiveFunction, alpha):
+def createModel_surcharge(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, objectiveFunction, alpha, method):
 
     modele = gp.Model("pcentre strates,pannes,capacités")
 
@@ -223,10 +227,18 @@ def createModel_surcharge(nnodes, p, nbS, maxDist, distances, capacity, demand, 
 
     # pprint.pprint(mapping)
 
-    # Variables de décision
-    x = modele.addVars(nbVariables, vtype=GRB.BINARY, name="x") # premier niveau
-    w = modele.addVars(nbVariables, vtype=GRB.BINARY, name="w") # second niveau
-    y = modele.addVars(nnodes, vtype=GRB.BINARY, name="y")      # assignation des centres
+    if method == "LP" :
+        # Variables de décision
+        x = modele.addVars(nbVariables,  lb=0.0, ub=1, vtype=GRB.CONTINUOUS, name="x") # premier niveau
+        w = modele.addVars(nbVariables,  lb=0.0, ub=1, vtype=GRB.CONTINUOUS, name="w") # second niveau
+        y = modele.addVars(nnodes,  lb=0.0, ub=1,vtype=GRB.CONTINUOUS, name="y")      # assignation des centres
+    elif method == "MIP" :
+        # Variables de décision
+        x = modele.addVars(nbVariables, vtype=GRB.BINARY, name="x") # premier niveau
+        w = modele.addVars(nbVariables, vtype=GRB.BINARY, name="w") # second niveau
+        y = modele.addVars(nnodes, vtype=GRB.BINARY, name="y")      # assignation des centres
+
+    
 
     As = modele.addVars(nbS, lb=0.0, ub=maxDist, vtype=GRB.CONTINUOUS, name="As")
     Bs = modele.addVars(nbS, lb=0.0, ub=maxDist, vtype=GRB.CONTINUOUS, name="Bs")
@@ -245,7 +257,7 @@ def createModel_surcharge(nnodes, p, nbS, maxDist, distances, capacity, demand, 
     expr = gp.LinExpr()
     for j in range(nnodes):
         expr += y[j]
-    modele.addConstr(expr == p, "nbCentres")
+    modele.addConstr(expr <= p, "nbCentres")
 
 
     for s in range(nbS):
@@ -489,7 +501,7 @@ def createModel_surcharge_pmedian(nnodes, p, nbS, maxDist, distances, capacity, 
 
 
 if __name__ == "__main__":
-    assert(len(sys.argv) == 4), "Usage: python solver.py <filename> <objectiveFunction> <csv>"
+    assert(len(sys.argv) == 5), "Usage: python solver.py <filename> <objectiveFunction> <csv> <method : LP or MIP>"
     assert(sys.argv[2] == "AB" or sys.argv[2] == "A" or sys.argv[2] == "B"), "objectiveFunction must be AB, A or B"
     
     objectiveFunction = sys.argv[2]
@@ -505,33 +517,8 @@ if __name__ == "__main__":
     
 
     pprint.pprint(alpha)
-
-    # for s in range(nbS):
-    #     alpha[s] = 0.1
-    # writeInstance(f"instancesSurcharges/alpha0_1/{sys.argv[1]}", nnodes, p, nbS, distances, capacity, demand, stratum, stratumCenter, alpha)
-
-    # for s in range(nbS):
-    #     alpha[s] = 0.2
-    # writeInstance(f"instancesSurcharges/alpha0_2/{sys.argv[1]}", nnodes, p, nbS, distances, capacity, demand, stratum, stratumCenter, alpha)
-
-    # for s in range(nbS):
-    #     alpha[s] = 0.3
-    # writeInstance(f"instancesSurcharges/alpha0_3/{sys.argv[1]}", nnodes, p, nbS, distances, capacity, demand, stratum, stratumCenter, alpha)
-
-    # # aléatoire alpha entre 0 et 0.3 jusqu'à 2 décimales près
-    # for s in range(nbS):
-    #     alpha[s] = round(np.random.uniform(0, 0.3), 2)
-    # writeInstance(f"instancesSurcharges/alpha_aleatoire/{sys.argv[1]}", nnodes, p, nbS, distances, capacity, demand, stratum, stratumCenter, alpha)
-
-
-    # affichage de l'instances
-    # displayInstances(maxDist, distances, capacity, demand, stratum, stratumCenter)
-
     # création du modèle
-    modele, x, w, y, As, Bs = createModel_surcharge(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, objectiveFunction, alpha)
-    # modele, x, w, y, As, Bs = createModel_surcharge_pmedian(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, objectiveFunction, alpha)
-    # modele, x, w, y, As, Bs = createModel_test(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, objectiveFunction)
-    # modele, x, w, y, As, Bs = createModel(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, objectiveFunction)
+    modele, x, w, y, As, Bs = createModel_surcharge(nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, objectiveFunction, alpha, sys.argv[4])
     
 
     # paramétrage du modèle
@@ -568,36 +555,12 @@ if __name__ == "__main__":
         print("Temps limite atteint")
         feasibility = "TimeLimit"
         print("Solution faisable ou suboptimal : ", modele.SolCount, " solutions trouvées")
+    elif modele.status == GRB.SOLUTION_LIMIT:
+        print("nombre de solution atteint")
+        feasibility = "SolutionLimit"
+        print("Solution faisable ou suboptimal : ", modele.SolCount, " solutions trouvées")
 
-
-    
-
-    # print("VALEUR DE Y :")
-    # val_y = modele.getAttr('X', y)
-    # for i in range(nnodes):
-    #     if val_y[i] == 1:
-    #         print(f"y[{i}] = {val_y[i]}")
-
-    # print("VALEUR DE X :")
-    # id = 0
-    # for s in range(nbS):
-    #     for i in range(nnodes):
-    #         for j in range(nnodes):
-    #             if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
-    #                 if val_x[id] == 1:
-    #                     print(f"x[{s},{i},{j}] = {val_x[id]} | distance = {distances[i,j]} | demande = {demand[j,s]} | capacité = {capacity[i,s]}")
-    #                 id += 1
-    # print("VALEUR DE W :")
-    # id = 0
-    # for s in range(nbS):
-    #     for i in range(nnodes):
-    #         for j in range(nnodes):
-    #             if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
-    #                 if val_w[id] == 1:
-    #                     print(f"w[{s},{i},{j}] = {val_w[id]} | distance = {distances[i,j]} | demande = {demand[j,s]} | capacité = {capacity[i,s]}")
-    #                 id += 1
-
-    if modele.status == GRB.OPTIMAL or modele.status == GRB.SUBOPTIMAL or modele.status == GRB.TIME_LIMIT and modele.SolCount > 0:
+    if modele.status == GRB.OPTIMAL or modele.status == GRB.SUBOPTIMAL or modele.status == GRB.TIME_LIMIT and modele.SolCount > 0 or modele.status == GRB.SOLUTION_LIMIT:
         val_x = modele.getAttr('X', x)
         val_w = modele.getAttr('X', w)
 
@@ -618,15 +581,11 @@ if __name__ == "__main__":
             for i in range(nnodes):
                 for j in range(nnodes):
                     if stratum[j,s] == 1 and stratumCenter[i,s] == 1:
-                        if val_x[id] == 1 and val_As[s] < distances[i,j]:
-                            val_As[s] = distances[i,j]
-                        if val_w[id] == 1 and val_Bs[s] < distances[i,j]:
-                            val_Bs[s] = distances[i,j]
+                        if val_As[s] < val_x[id] * distances[i,j]:
+                            val_As[s] = distances[i,j] * val_x[id]
+                        if val_Bs[s] < val_w[id] * distances[i,j]:
+                            val_Bs[s] = distances[i,j] * val_w[id]
 
-                        if val_x[id] == 1:
-                            val_As_pmedian[s] += distances[i,j]
-                        if val_w[id] == 1:
-                            val_Bs_pmedian[s] += distances[i,j]
                         id += 1
 
         for s in range(nbS):
@@ -663,9 +622,14 @@ if __name__ == "__main__":
             objVal = sum(val_Bs)
             print("Valeur de la fonction objectif : ", sum(val_Bs))
 
+        # Si LP 
+        if sys.argv[4] == "LP":
+            with open(csv_file, "a") as f:
+                f.write(f"{sys.argv[4]}\t{sys.argv[1]}\t{nnodes}\t{p}\t{nbS}\t{feasibility}\t{modele.Runtime}\t{objectiveFunction}\t{sum(val_As)}\t{sum(val_Bs)}\t{sum(val_As) + sum(val_Bs)}\t{modele.NodeCount}\t{modele.ObjBound}\n")
+        elif sys.argv[4] == "MIP":
+            with open(csv_file, "a") as f:
+                f.write(f"{sys.argv[4]}\t{sys.argv[1]}\t{nnodes}\t{p}\t{nbS}\t{feasibility}\t{modele.Runtime}\t{objectiveFunction}\t{sum(val_As)}\t{sum(val_Bs)}\t{sum(val_As) + sum(val_Bs)}\t{modele.NodeCount}\t{modele.ObjBound}\t{modele.MIPGap}\n")
 
-
-        # écriture des résultats dans un fichier au format csv (chaque ligne une instance)
-        # [nom instance] [nombre de noeuds] [nombre de centres] [nombre de strates] [Faisabilité] [Temps] [fonction objective] [Somme des A] [Somme des B] [Somme des AB] [Nombre de noeuds explorés] [valeur objective linéaire] [GAP] [Somme des A pmedian] [Somme des B pmedian] [Somme des AB pmedian]
-        with open(csv_file, "a") as f:
-            f.write(f"{sys.argv[1]}\t{nnodes}\t{p}\t{nbS}\t{feasibility}\t{modele.Runtime}\t{objectiveFunction}\t{sum(val_As)}\t{sum(val_Bs)}\t{sum(val_As) + sum(val_Bs)}\t{modele.NodeCount}\t{modele.ObjBound}\t{modele.MIPGap}\t{round(sum(val_As_pmedian), 2)}\t{round(sum(val_Bs_pmedian), 2)}\t{round(sum(val_As_pmedian) + sum(val_Bs_pmedian), 2)}\n")
+            print("Borne inférieure : ", modele.ObjBound)
+            print("Borne supérieure : ", modele.ObjVal)
+        

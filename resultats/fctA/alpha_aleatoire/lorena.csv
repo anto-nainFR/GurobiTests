@@ -1,9 +1,0 @@
-Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap	 As_pmedian	 Bs_pmedian	 As+Bs_pmedian
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_1.dat	A	INFEASIBLE
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_2.dat	A	INFEASIBLE
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_3.dat	A	INFEASIBLE
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_4.dat	A	INFEASIBLE
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_5.dat	A	INFEASIBLE
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC2_1.dat	A	INFEASIBLE
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC2_2.dat	A	INFEASIBLE
-../instancesSurcharges/alpha_aleatoire/Lorena/SJC2_3.dat	A	INFEASIBLE

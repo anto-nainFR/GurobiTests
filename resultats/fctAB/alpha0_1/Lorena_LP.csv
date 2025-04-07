@@ -1,0 +1,11 @@
+Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
+../../instancesSurcharges/alpha0_1/Lorena/SJC1_1.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_1/Lorena/SJC1_2.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_1/Lorena/SJC1_3.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_1/Lorena/SJC1_4.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_1/Lorena/SJC1_5.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_1/Lorena/SJC2_1.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_1/Lorena/SJC2_2.dat	AB	INFEASIBLE
+LP	../../instancesSurcharges/alpha0_1/Lorena/SJC3b_1.dat	300	30	3	Optimal	1934.5885558128357	AB	625.051296544672	627.7318994425267	1252.7831959871987	0.0	1365.0
+LP	../../instancesSurcharges/alpha0_1/Lorena/SJC4b_1.dat	402	40	3	Optimal	1560.0635571479797	AB	722.7208737864078	734.346949554866	1457.0678233412737	0.0	1517.0
+LP	../../instancesSurcharges/alpha0_1/Lorena/SJC4b_2.dat	402	40	5	Optimal	3071.674757003784	AB	1109.1670856319301	1107.418882124943	2216.5859677568733	0.0	2458.0

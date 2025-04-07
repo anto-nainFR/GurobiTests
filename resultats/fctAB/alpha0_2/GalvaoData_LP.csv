@@ -1,0 +1,32 @@
+Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
+../../instancesSurcharges/alpha0_2/GalvaoData/G1_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G1_2.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G1_3.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G1_4.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G1_5.txt	AB	INFEASIBLE
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G2_1.txt	100	5	3	Optimal	194.55323195457458	AB	247.72094416217186	263.271911872457	510.99285603462886	0.0	527.0023128586901
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G2_2.txt	100	5	5	Optimal	405.4719979763031	AB	277.5056875632882	299.44741797375025	576.9531055370385	0.0	796.8589632358204
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G2_3.txt	100	5	10	Optimal	743.0684130191803	AB	609.7595131429899	609.5946169600733	1219.3541301030632	0.0	1718.0611287345998
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G2_4.txt	100	5	15	Optimal	1412.0851027965546	AB	885.1956364600575	838.8826625445273	1724.0782990045848	0.0	2656.695233910878
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G2_5.txt	100	5	20	Optimal	2374.3473880290985	AB	1488.6255375010323	1566.9967833649878	3055.6223208660203	0.0	3609.307827560264
+../../instancesSurcharges/alpha0_2/GalvaoData/G3_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G3_2.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G3_3.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G3_4.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G3_5.txt	AB	INFEASIBLE
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G4_1.txt	100	10	3	Optimal	165.82958388328552	AB	248.92801997806373	247.4635027163178	496.39152269438154	0.0	497.85603995612746
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G4_2.txt	100	10	5	Optimal	449.1724410057068	AB	376.78007222722806	366.05733913223776	742.8374113594658	0.0	753.5601444544561
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G4_3.txt	100	10	10	Optimal	834.369714975357	AB	748.2161151899226	770.2879357488521	1518.5040509387745	0.0	1549.5246793877077
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G4_4.txt	100	10	15	Optimal	1277.5469670295715	AB	1271.6169747611866	1289.1144544252202	2560.731429186407	0.0	2590.3829393439155
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G4_5.txt	100	10	20	Optimal	1698.1475160121918	AB	1566.053091797476	1610.7150170868133	3176.768108884289	0.0	3258.591442278389
+../../instancesSurcharges/alpha0_2/GalvaoData/G5_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G5_2.txt	AB	INFEASIBLE
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G6_1.txt	150	10	3	Optimal	484.5957028865814	AB	319.4704645954331	321.3124869686875	640.7829515641206	0.0	642.624973937375
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G6_2.txt	150	10	5	Optimal	1072.4426329135895	AB	492.4962339465949	493.5303243623883	986.0265583089831	0.0	996.3623167939876
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G6_3.txt	150	10	10	Optimal	2318.1256630420685	AB	912.1826496225425	912.7399911561091	1824.9226407786516	0.0	1838.9195828744503
+../../instancesSurcharges/alpha0_2/GalvaoData/G7_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G7_2.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G7_3.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_2/GalvaoData/G8_1.txt	AB	INFEASIBLE
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G8_2.txt	150	15	5	Optimal	799.5033559799194	AB	447.975782454443	449.3573308041123	897.3331132585553	0.0	898.5892968934855
+LP	../../instancesSurcharges/alpha0_2/GalvaoData/G8_3.txt	150	15	10	Optimal	2178.481048107147	AB	890.1920690560097	889.3210103191956	1779.5130793752053	0.0	1784.2343421436144

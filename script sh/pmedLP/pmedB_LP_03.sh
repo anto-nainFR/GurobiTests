@@ -8,6 +8,6 @@ source ../../.venv/bin/activate
 for instance in `ls ../../instancesSurcharges/alpha0_3/pmed`
 do
     echo "pmed alpha0_3 $instance"
-    python ../solverGurobi.py ../instancesSurcharges/alpha0_3/pmed/$instance B "../../resultats/fctB/alpha0_3/pmed_LP.csv" LP
+    python ../../solverGurobi.py ../../instancesSurcharges/alpha0_3/pmed/$instance B "../../resultats/fctB/alpha0_3/pmed_LP.csv" LP
 done
 

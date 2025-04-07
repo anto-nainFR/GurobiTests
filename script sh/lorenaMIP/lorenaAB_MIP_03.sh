@@ -6,5 +6,5 @@ source ../../.venv/bin/activate
 for instance in `ls ../../instancesSurcharges/alpha0_3/Lorena`
 do
     echo "Lorena alpha0_3 $instance"
-    python ../solverGurobi.py ../instancesSurcharges/alpha0_3/Lorena/$instance AB "../../resultats/fctAB/alpha0_3/Lorena_MIP.csv" MIP
+    python ../../solverGurobi.py ../../instancesSurcharges/alpha0_3/Lorena/$instance AB "../../resultats/fctAB/alpha0_3/Lorena_MIP.csv" MIP
 done

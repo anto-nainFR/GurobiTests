@@ -6,5 +6,5 @@ source ../../.venv/bin/activate
 for instance in `ls ../../instancesSurcharges/alpha0_3/Aleatoire`
 do
     echo "Aleatoire alpha0_3 $instance"
-    python ../solverGurobi.py ../instancesSurcharges/alpha0_3/Aleatoire/$instance AB "../../resultats/fctAB/alpha0_3/aleatoire_LP.csv" LP
+    python ../../solverGurobi.py ../../instancesSurcharges/alpha0_3/Aleatoire/$instance AB "../../resultats/fctAB/alpha0_3/aleatoire_LP.csv" LP
 done

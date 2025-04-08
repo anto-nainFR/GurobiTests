@@ -1,1 +1,30 @@
 Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
+../../instancesSurcharges/alpha0_3/GalvaoData/G1_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G1_2.txt	AB	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G2_1.txt	100	5	3	TimeLimit	3600.3270070552826	AB	293.0	339.0	632.0	1190.0	596.0	0.056962025316455694
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G2_2.txt	100	5	5	TimeLimit	3600.009490966797	AB	532.0	610.0	1142.0	802.0	1004.0	0.12084063047285463
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G2_3.txt	100	5	10	TimeLimit	3600.0195372104645	AB	1013.0	1116.0	2129.0	413.0	2008.0	0.05683419445749178
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G2_4.txt	100	5	15	TimeLimit	3600.0757160186768	AB	1796.0	2077.0	3873.0	21.0	3008.0	0.2233410792667183
+../../instancesSurcharges/alpha0_3/GalvaoData/G3_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G3_2.txt	AB	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G3_3.txt	100	10	10	Optimal	2533.2396187782288	AB	960.0	1002.0	1962.0	1070.0	1962.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G3_4.txt	100	10	15	TimeLimit	3600.02312207222	AB	1512.0	1618.0	3130.0	10.0	2943.0	0.0597444089456869
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G4_1.txt	100	10	3	TimeLimit	3600.005234003067	AB	280.0	295.0	575.0	2303.0	541.0	0.059130434782608696
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G4_2.txt	100	10	5	TimeLimit	3600.100077152252	AB	460.0	505.0	965.0	766.0	891.0	0.0766839378238342
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G4_3.txt	100	10	10	TimeLimit	3600.0126061439514	AB	929.0	981.0	1910.0	451.0	1787.0	0.06439790575916231
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G4_4.txt	100	10	15	TimeLimit	3600.045564889908	AB	1518.0	1604.0	3122.0	470.0	2807.0	0.10089686098654709
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G4_5.txt	100	10	20	TimeLimit	3600.0234758853912	AB	1925.0	2039.0	3964.0	341.0	3616.0	0.08779011099899092
+../../instancesSurcharges/alpha0_3/GalvaoData/G5_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G5_2.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G5_4.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G5_5.txt	AB	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G6_1.txt	150	10	3	TimeLimit	3600.0102059841156	AB	356.0	394.0	750.0	1733.0	704.0	0.06133333333333333
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G6_2.txt	150	10	5	TimeLimit	3600.014235973358	AB	545.0	661.0	1206.0	686.0	1130.0	0.06301824212271974
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G6_3.txt	150	10	10	TimeLimit	3600.035516023636	AB	1404.0	1494.0	2898.0	11.0	2150.0	0.2581090407177364
+../../instancesSurcharges/alpha0_3/GalvaoData/G7_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G7_2.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G7_4.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G7_5.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/GalvaoData/G8_1.txt	AB	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G8_2.txt	150	15	5	TimeLimit	3600.0893721580505	AB	523.0	556.0	1079.0	600.0	1010.0	0.0639481000926784
+MIP	../../instancesSurcharges/alpha0_3/GalvaoData/G8_3.txt	150	15	10	TimeLimit	3600.1369149684906	AB	1032.0	1163.0	2195.0	205.0	1991.0	0.0929384965831435

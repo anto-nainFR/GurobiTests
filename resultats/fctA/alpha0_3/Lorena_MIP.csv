@@ -1,1 +1,24 @@
 Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_1.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_2.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_3.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_4.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_5.dat	A	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC2_1.dat	200	15	3	TimeLimit	3600.0261669158936	A	1092.0	7681.0	8773.0	14.0	948.0	0.13186813186813187
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC2_4.dat	200	15	15	TimeLimit	3600.2324221134186	A	13039.0	39030.0	52069.0	2.0	4950.0	0.6203696602500192
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC3a_1.dat	300	25	3	TimeLimit	3600.289983034134	A	1164.0	8813.0	9977.0	2.0	791.0	0.32044673539518903
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_2.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_3.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_4.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_5.dat	A	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC3b_1.dat	300	30	3	TimeLimit	3600.0790889263153	A	903.0	8510.0	9413.0	1.0	756.0	0.16279069767441862
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_2.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_3.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_4.dat	A	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_5.dat	A	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4a_1.dat	402	30	3	TimeLimit	3600.11377286911	A	1275.0	9545.0	10820.0	11.0	828.0	0.35058823529411764
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4a_2.dat	402	30	5	TimeLimit	3600.219218969345	A	2938.0	15969.0	18907.0	1.0	1301.0	0.5571817562968006
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4b_1.dat	402	40	3	TimeLimit	3600.1721529960632	A	857.0	9379.0	10236.0	2.0	785.0	0.08401400233372229
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4b_2.dat	402	40	5	TimeLimit	3600.493842124939	A	2160.0	15632.0	17792.0	1.0	1224.0	0.43333333333333335
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4b_3.dat	402	40	10	TimeLimit	3601.2494399547577	A	15038.0	30602.0	45640.0	1.0	2889.0	0.8078866870594494
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4b_5.dat	402	40	20	TimeLimit	3602.3994188308716	A	36176.0	65332.0	101508.0	1.0	5882.0	0.8374060150375939

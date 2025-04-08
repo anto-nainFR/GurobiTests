@@ -1,1 +1,20 @@
 Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_1.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_2.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_3.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_4.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC1_5.dat	AB	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC2_1.dat	200	15	3	TimeLimit	3600.1607661247253	AB	1440.0	3478.0	4918.0	2.0	2262.0	0.5400569337128914
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC3a_1.dat	300	25	3	TimeLimit	3600.1753339767456	AB	3036.0	6508.0	9544.0	1.0	2069.0	0.7832145850796312
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_2.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_3.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_4.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3a_5.dat	AB	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC3b_1.dat	300	30	3	TimeLimit	3600.109794855118	AB	1005.0	1856.0	2861.0	1.0	1911.0	0.33205173016427825
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_2.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_3.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_4.dat	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/Lorena/SJC3b_5.dat	AB	INFEASIBLE
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4a_1.dat	402	30	3	TimeLimit	3600.10853600502	AB	1326.0	3897.0	5223.0	1.0	2067.0	0.6042504307869041
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4b_1.dat	402	40	3	TimeLimit	3600.094924926758	AB	1032.0	1427.0	2459.0	1.0	1877.0	0.23668157787718586
+MIP	../../instancesSurcharges/alpha0_3/Lorena/SJC4b_2.dat	402	40	5	TimeLimit	3600.225527048111	AB	2143.0	5551.0	7694.0	1.0	2984.0	0.6121653236288017

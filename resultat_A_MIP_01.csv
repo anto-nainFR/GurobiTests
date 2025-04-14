@@ -1,0 +1,13 @@
+Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed25_5.txt	500	167	20	TimeLimit	3600.8955941200256	A	875.0	2033.0	2908.0	1.0	804.0	0.08114285714285714
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed26_1.txt	600	5	3	TimeLimit	3600.2705760002136	A	118.0	235.0	353.0	1.0	110.0	0.06779661016949153
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed26_2.txt	600	5	5	TimeLimit	3600.3830530643463	A	250.0	343.0	593.0	1.0	135.0	0.46
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed26_3.txt	600	5	10	TimeLimit	3600.866776943207	A	541.0	609.0	1150.0	1.0	359.0	0.3364140480591497
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed27_2.txt	600	10	5	TimeLimit	3600.4099040031433	A	204.0	341.0	545.0	1.0	151.0	0.25980392156862747
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed27_4.txt	600	10	15	TimeLimit	3601.3838551044464	A	700.0	1062.0	1762.0	1.0	504.0	0.28
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed27_5.txt	600	10	20	TimeLimit	3602.8145360946655	A	1018.0	1462.0	2480.0	1.0	657.0	0.35461689587426326
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed28_4.txt	600	60	15	TimeLimit	3601.123132944107	A	809.0	1389.0	2198.0	1.0	589.0	0.2719406674907293
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed29_3.txt	600	120	10	Optimal	1599.5439238548279	A	306.0	674.0	980.0	1.0	306.0	0.0
+MIP	./instancesSurcharges/alpha0_1/pmed/pmed29_5.txt	600	120	20	TimeLimit	3601.6837491989136	A	736.0	1655.0	2391.0	1.0	584.0	0.20652173913043478
+MIP	./instancesSurcharges/alpha0_1/Beasley/p20_5.txt	100	10	20	TimeLimit	3600.0681211948395	A	487.0	2021.0	2508.0	785.0	430.0	0.11704312114989733
+MIP	./instancesSurcharges/alpha0_1/Beasley/p4_5.txt	50	5	20	TimeLimit	3600.0298550128937	A	739.0	1965.0	2704.0	242598.0	734.0	0.006765899864682003

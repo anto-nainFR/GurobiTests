@@ -1,0 +1,16 @@
+Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed12_5.txt	300	10	20	TimeLimit	3600.343132019043	B	1521.0	1632.0	3153.0	1.0	1264.0	0.22549019607843138
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed21_3.txt	500	5	10	TimeLimit	3600.578392982483	B	570.0	599.0	1169.0	1.0	412.0	0.3121869782971619
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed21_4.txt	500	5	15	TimeLimit	3601.300029039383	B	798.0	871.0	1669.0	1.0	628.0	0.27898966704936856
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed21_5.txt	500	5	20	TimeLimit	3601.113445997238	B	1164.0	1196.0	2360.0	1.0	856.0	0.2842809364548495
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed22_4.txt	500	10	15	TimeLimit	3600.8489899635315	B	815.0	919.0	1734.0	1.0	664.0	0.27747551686615884
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed22_5.txt	500	10	20	TimeLimit	3601.730234861374	B	1051.0	1093.0	2144.0	1.0	938.0	0.14181152790484905
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed23_2.txt	500	50	5	Optimal	1789.7678389549255	B	174.0	174.0	348.0	1.0	174.0	0.0
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed23_3.txt	500	50	10	TimeLimit	3600.6581330299377	B	406.0	446.0	852.0	1.0	330.0	0.2600896860986547
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed23_4.txt	500	50	15	TimeLimit	3600.7030279636383	B	591.0	758.0	1349.0	1.0	469.0	0.3812664907651715
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed23_5.txt	500	50	20	TimeLimit	3600.9756078720093	B	746.0	861.0	1607.0	1.0	600.0	0.30313588850174217
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed25_2.txt	500	167	5	Optimal	1452.0619609355927	B	236.0	244.0	480.0	1.0	244.0	0.0
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed26_1.txt	600	5	3	TimeLimit	3600.596389055252	B	132.0	143.0	275.0	1.0	120.0	0.16083916083916083
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed26_2.txt	600	5	5	TimeLimit	3600.398943901062	B	255.0	282.0	537.0	1.0	135.0	0.5212765957446809
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed26_3.txt	600	5	10	TimeLimit	3600.868973016739	B	454.0	496.0	950.0	1.0	402.0	0.18951612903225806
+MIP	./instancesSurcharges/alpha0_2/pmed/pmed27_1.txt	600	10	3	TimeLimit	3600.2623751163483	B	109.0	115.0	224.0	1.0	109.0	0.05217391304347826

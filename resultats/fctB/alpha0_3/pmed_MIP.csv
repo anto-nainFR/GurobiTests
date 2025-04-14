@@ -192,3 +192,15 @@ MIP	../../instancesSurcharges/alpha0_3/pmed/pmed7_5.txt	200	10	20	TimeLimit	3600
 MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_1.txt	200	20	3	Optimal	192.01110696792603	B	234.0	244.0	478.0	43.0	244.0	0.0
 MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_2.txt	200	20	5	Optimal	179.3378369808197	B	392.0	404.0	796.0	1.0	404.0	0.0
 MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_3.txt	200	20	10	TimeLimit	3600.0773878097534	B	745.0	803.0	1548.0	1357.0	799.0	0.0049813200498132005
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_4.txt	200	20	15	TimeLimit	3600.852861881256	B	1327.0	1369.0	2696.0	1066.0	1361.0	0.005843681519357195
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_5.txt	200	20	20	TimeLimit	3600.253993988037	B	1573.0	1767.0	3340.0	1.0	1638.0	0.0730050933786078
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_1.txt	200	40	3	Optimal	9.177135944366455	B	232.0	235.0	467.0	1.0	235.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_2.txt	200	40	5	Optimal	25.914628982543945	B	365.0	390.0	755.0	1.0	390.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_3.txt	200	40	10	Optimal	182.62844896316528	B	776.0	817.0	1593.0	1.0	817.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_4.txt	200	40	15	Optimal	107.17368698120117	B	1097.0	1184.0	2281.0	1.0	1184.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_5.txt	200	40	20	TimeLimit	3600.1057138442993	B	1437.0	1516.0	2953.0	1418.0	1511.0	0.0032981530343007917
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_1.txt	B	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_2.txt	B	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_3.txt	B	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_4.txt	B	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_5.txt	B	INFEASIBLE

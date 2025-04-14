@@ -190,3 +190,17 @@ MIP	../../instancesSurcharges/alpha0_3/pmed/pmed7_3.txt	200	10	10	TimeLimit	3600
 MIP	../../instancesSurcharges/alpha0_3/pmed/pmed7_4.txt	200	10	15	TimeLimit	3600.0755989551544	AB	1153.0	1333.0	2486.0	72.0	2226.0	0.10458567980691874
 MIP	../../instancesSurcharges/alpha0_3/pmed/pmed7_5.txt	200	10	20	TimeLimit	3600.0880970954895	AB	1861.0	2043.0	3904.0	3.0	3094.0	0.2074795081967213
 MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_1.txt	200	20	3	TimeLimit	3600.0147771835327	AB	210.0	252.0	462.0	5344.0	443.0	0.04112554112554113
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_2.txt	200	20	5	TimeLimit	3600.031375169754	AB	333.0	419.0	752.0	8454.0	747.0	0.006648936170212766
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_3.txt	200	20	10	TimeLimit	3600.194142103195	AB	663.0	829.0	1492.0	1003.0	1473.0	0.012734584450402145
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_4.txt	200	20	15	TimeLimit	3600.267655134201	AB	1213.0	1388.0	2601.0	689.0	2571.0	0.011534025374855825
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed8_5.txt	200	20	20	TimeLimit	3600.2500739097595	AB	1427.0	1761.0	3188.0	1.0	3025.0	0.051129234629861985
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_1.txt	200	40	3	Optimal	20.080656051635742	AB	212.0	235.0	447.0	1.0	447.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_2.txt	200	40	5	Optimal	83.1770989894867	AB	311.0	390.0	701.0	1.0	701.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_3.txt	200	40	10	Optimal	640.1797919273376	AB	672.0	818.0	1490.0	1.0	1490.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_4.txt	200	40	15	Optimal	602.8027498722076	AB	1019.0	1184.0	2203.0	1.0	2203.0	0.0
+MIP	../../instancesSurcharges/alpha0_3/pmed/pmed9_5.txt	200	40	20	TimeLimit	3600.182527780533	AB	1286.0	1528.0	2814.0	582.0	2808.0	0.0021321961620469083
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_1.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_2.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_3.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_4.txt	AB	INFEASIBLE
+../../instancesSurcharges/alpha0_3/pmed/pmedTest_5.txt	AB	INFEASIBLE

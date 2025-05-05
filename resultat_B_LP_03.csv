@@ -1,2 +1,0 @@
-Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
-LP	./instancesSurcharges/alpha0_3/pmed/pmed17_4.txt	400	10	15	Optimal	3601.374174118042	B	348.5604361056424	357.49409260644813	706.0545287120906	0.0	555.8963830914813

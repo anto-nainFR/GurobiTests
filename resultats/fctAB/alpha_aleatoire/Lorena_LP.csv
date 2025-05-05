@@ -1,9 +1,0 @@
-Instances	 nnodes	 p	 strates	 faisabilite	 temps	 fctObj	 As	 Bs	 As+Bs	 noeuds	 borne	 gap
-../../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_1.dat	AB	INFEASIBLE
-../../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_2.dat	AB	INFEASIBLE
-../../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_3.dat	AB	INFEASIBLE
-../../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_4.dat	AB	INFEASIBLE
-../../instancesSurcharges/alpha_aleatoire/Lorena/SJC1_5.dat	AB	INFEASIBLE
-LP	../../instancesSurcharges/alpha_aleatoire/Lorena/SJC3b_1.dat	300	30	3	Optimal	1685.9172859191895	AB	605.1745308365619	591.452969917538	1196.6275007540999	0.0	1365.0
-LP	../../instancesSurcharges/alpha_aleatoire/Lorena/SJC4b_1.dat	402	40	3	Optimal	1220.7107241153717	AB	741.2493952644845	745.9760885437472	1487.2254838082317	0.0	1517.0
-LP	../../instancesSurcharges/alpha_aleatoire/Lorena/SJC4b_2.dat	402	40	5	Optimal	2658.7039630413055	AB	1143.7512774865795	1146.3209729625148	2290.072250449094	0.0	2458.0

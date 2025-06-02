@@ -1,0 +1,593 @@
+nombre de noeuds : 20
+nombre de strates : 2
+nombre de centres : 2
+titre : fenetre
+instances : alea20_2_1
+temps de calcul : 0.0010750293731689453
+valeur objective : 211.0
+nombre de solutions : 1
+nombre de noeuds : 0.0
+faisability : True
+centre : [6, 13]
+moy_distances :	36.07
+min_distances :	11.0
+max_distances :	67.0
+var_distances :	153.44720221606644
+covar_distances :	153.85207610054158
+ecartType_distances :	12.387380764958605
+coef_variation	: 0.3433910629329056
+distances_centre_x :
+43.0	-1.0	30.0	24.0	33.0	16.0	0.0	27.0	13.0	-1.0	31.0	-1.0	29.0	0.0	-1.0	22.0	-1.0	15.0	30.0	12.0	
+43.0	57.0	-1.0	24.0	33.0	16.0	0.0	27.0	-1.0	28.0	-1.0	16.0	-1.0	-1.0	28.0	22.0	29.0	-1.0	-1.0	12.0	
+
+distances_centre_w :
+53.0	-1.0	32.0	52.0	34.0	38.0	28.0	31.0	15.0	-1.0	38.0	-1.0	36.0	28.0	-1.0	34.0	-1.0	16.0	31.0	30.0	
+53.0	58.0	-1.0	52.0	34.0	38.0	28.0	31.0	-1.0	39.0	-1.0	32.0	-1.0	-1.0	30.0	34.0	45.0	-1.0	-1.0	30.0	
+
+maxX :
+43.0	57.0	
+
+maxW :
+53.0	58.0	
+
+minX :
+0.0	0.0	
+
+minW :
+15.0	28.0	
+
+moyX :
+21.666666666666668	25.76923076923077	
+
+moyW :
+33.06666666666667	38.76923076923077	
+
+medX :
+24.0	27.0	
+
+medW :
+32.0	34.0	
+
+ecartTypeX :
+11.77945480722922	13.610820617061355	
+
+ecartTypeW :
+10.009773002199179	9.640889251626646	
+
+varX :
+138.75555555555556	185.25443786982245	
+
+varW :
+100.19555555555556	92.94674556213019	
+
+covarX :
+148.66666666666663	200.69230769230768	
+
+covarW :
+107.35238095238095	100.69230769230768	
+
+coef_variationX :
+0.5436671449490409	0.5281810985725301	
+
+coef_variationW :
+0.30271490934070094	0.24867373069671908	
+
+moy_distances_centre :	28.0
+min_distances_centre :	28.0
+max_distances_centre :	28.0
+med_distances_centre :	28.0
+ecartType_distances_centre :	0.0
+var_distances_centre :	0.0
+covar_distances_centre :	0.0
+coef_variation_distances_centre :	0.0
+capacite_X_temoin : 
+19.0	19.0	
+19.0	17.0	
+
+capacite_W_temoin : 
+16.7	17.7	
+14.7	19.1	
+
+demande_cumulee_X : 
+8.0	7.0	
+10.0	3.0	
+
+demande_cumulee_W : 
+7.0	8.0	
+3.0	10.0	
+
+capacite_residuelle_X : 
+11.0	12.0	
+9.0	14.0	
+
+capacite_residuelle_W : 
+9.7	9.7	
+11.7	9.100000000000001	
+
+min_capacite_X : 
+19.0	17.0	
+
+min_capacite_W : 
+16.7	14.7	
+
+max_capacite_X : 
+19.0	19.0	
+
+max_capacite_W : 
+17.7	19.1	
+
+moy_capacite_X : 
+19.0	18.0	
+
+moy_capacite_W : 
+17.2	16.9	
+
+med_capacite_X : 
+19.0	18.0	
+
+med_capacite_W : 
+17.2	16.9	
+
+ecartType_capacite_X : 
+0.0	1.0	
+
+ecartType_capacite_W : 
+0.5	2.200000000000001	
+
+var_capacite_X : 
+0.0	1.0	
+
+var_capacite_W : 
+0.25	4.840000000000005	
+
+covar_capacite_X : 
+0.0	2.0	
+
+covar_capacite_W : 
+0.5	9.68000000000001	
+
+##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	nombre de noeuds : 20
+nombre de strates : 2
+nombre de centres : 2
+titre : fenetre
+instances : alea20_2_1
+temps de calcul : 0.0007338523864746094
+valeur objective : 239.0
+nombre de solutions : 1
+nombre de noeuds : 0.0
+faisability : True
+centre : [13, 15]
+moy_distances :	36.07
+min_distances :	11.0
+max_distances :	67.0
+var_distances :	153.44720221606644
+covar_distances :	153.85207610054158
+ecartType_distances :	12.387380764958605
+coef_variation	: 0.3433910629329056
+distances_centre_x :
+53.0	-1.0	32.0	46.0	33.0	38.0	22.0	31.0	15.0	-1.0	31.0	-1.0	29.0	0.0	-1.0	0.0	-1.0	15.0	30.0	12.0	
+53.0	57.0	-1.0	46.0	33.0	38.0	22.0	31.0	-1.0	39.0	-1.0	32.0	-1.0	-1.0	30.0	0.0	31.0	-1.0	-1.0	12.0	
+
+distances_centre_w :
+62.0	-1.0	36.0	52.0	44.0	38.0	28.0	42.0	19.0	-1.0	38.0	-1.0	32.0	34.0	-1.0	34.0	-1.0	26.0	41.0	36.0	
+62.0	67.0	-1.0	52.0	44.0	38.0	28.0	42.0	-1.0	50.0	-1.0	38.0	-1.0	-1.0	34.0	34.0	45.0	-1.0	-1.0	36.0	
+
+maxX :
+53.0	57.0	
+
+maxW :
+62.0	67.0	
+
+minX :
+0.0	0.0	
+
+minW :
+19.0	28.0	
+
+moyX :
+25.8	32.61538461538461	
+
+moyW :
+37.46666666666667	43.84615384615385	
+
+medX :
+30.0	32.0	
+
+medW :
+36.0	42.0	
+
+ecartTypeX :
+14.693309134886304	14.866267761605913	
+
+ecartTypeW :
+10.032391982418197	10.918200428262708	
+
+varX :
+215.89333333333332	221.0059171597633	
+
+varW :
+100.6488888888889	119.20710059171597	
+
+covarX :
+231.31428571428563	239.4230769230769	
+
+covarW :
+107.83809523809526	129.14102564102564	
+
+coef_variationX :
+0.5695081060033451	0.4558053794832002	
+
+coef_variationW :
+0.26776846928162445	0.2490115887147635	
+
+moy_distances_centre :	34.0
+min_distances_centre :	34.0
+max_distances_centre :	34.0
+med_distances_centre :	34.0
+ecartType_distances_centre :	0.0
+var_distances_centre :	0.0
+covar_distances_centre :	0.0
+coef_variation_distances_centre :	0.0
+capacite_X_temoin : 
+19.0	19.0	
+17.0	17.0	
+
+capacite_W_temoin : 
+13.7	20.7	
+14.1	17.1	
+
+demande_cumulee_X : 
+11.0	4.0	
+8.0	5.0	
+
+demande_cumulee_W : 
+4.0	11.0	
+5.0	8.0	
+
+capacite_residuelle_X : 
+8.0	15.0	
+9.0	12.0	
+
+capacite_residuelle_W : 
+9.7	9.7	
+9.1	9.100000000000001	
+
+min_capacite_X : 
+19.0	17.0	
+
+min_capacite_W : 
+13.7	14.1	
+
+max_capacite_X : 
+19.0	17.0	
+
+max_capacite_W : 
+20.7	17.1	
+
+moy_capacite_X : 
+19.0	17.0	
+
+moy_capacite_W : 
+17.2	15.600000000000001	
+
+med_capacite_X : 
+19.0	17.0	
+
+med_capacite_W : 
+17.2	15.600000000000001	
+
+ecartType_capacite_X : 
+0.0	0.0	
+
+ecartType_capacite_W : 
+3.5	1.5000000000000009	
+
+var_capacite_X : 
+0.0	0.0	
+
+var_capacite_W : 
+12.25	2.2500000000000027	
+
+covar_capacite_X : 
+0.0	0.0	
+
+covar_capacite_W : 
+24.5	4.500000000000005	
+
+##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	nombre de noeuds : 20
+nombre de strates : 2
+nombre de centres : 2
+titre : fenetre
+instances : alea20_2_1
+temps de calcul : 0.0005259513854980469
+valeur objective : 228.0
+nombre de solutions : 1
+nombre de noeuds : 0.0
+faisability : True
+centre : [15, 14]
+moy_distances :	36.07
+min_distances :	11.0
+max_distances :	67.0
+var_distances :	153.44720221606644
+covar_distances :	153.85207610054158
+ecartType_distances :	12.387380764958605
+coef_variation	: 0.3433910629329056
+distances_centre_x :
+45.0	-1.0	30.0	37.0	44.0	16.0	22.0	36.0	15.0	-1.0	25.0	-1.0	32.0	30.0	-1.0	0.0	-1.0	26.0	41.0	32.0	
+45.0	54.0	-1.0	37.0	44.0	16.0	22.0	36.0	-1.0	30.0	-1.0	38.0	-1.0	-1.0	0.0	0.0	31.0	-1.0	-1.0	32.0	
+
+distances_centre_w :
+62.0	-1.0	36.0	46.0	45.0	38.0	28.0	42.0	19.0	-1.0	38.0	-1.0	49.0	34.0	-1.0	34.0	-1.0	27.0	42.0	36.0	
+62.0	67.0	-1.0	46.0	45.0	38.0	28.0	42.0	-1.0	50.0	-1.0	42.0	-1.0	-1.0	34.0	34.0	46.0	-1.0	-1.0	36.0	
+
+maxX :
+45.0	54.0	
+
+maxW :
+62.0	67.0	
+
+minX :
+0.0	0.0	
+
+minW :
+19.0	28.0	
+
+moyX :
+28.733333333333334	29.615384615384617	
+
+moyW :
+38.4	43.84615384615385	
+
+medX :
+30.0	32.0	
+
+medW :
+38.0	42.0	
+
+ecartTypeX :
+11.653135009754052	15.711526692397436	
+
+ecartTypeW :
+9.871170143402454	10.603672468653736	
+
+varX :
+135.79555555555558	246.85207100591714	
+
+varW :
+97.44000000000001	112.4378698224852	
+
+covarX :
+145.4952380952381	267.4230769230769	
+
+covarW :
+104.4	121.80769230769228	
+
+coef_variationX :
+0.40556154326290206	0.5305190831199134	
+
+coef_variationW :
+0.2570617224844389	0.2418381440219273	
+
+moy_distances_centre :	34.0
+min_distances_centre :	34.0
+max_distances_centre :	34.0
+med_distances_centre :	34.0
+ecartType_distances_centre :	0.0
+var_distances_centre :	0.0
+covar_distances_centre :	0.0
+coef_variation_distances_centre :	0.0
+capacite_X_temoin : 
+16.0	19.0	
+18.0	17.0	
+
+capacite_W_temoin : 
+11.8	18.7	
+15.399999999999999	17.1	
+
+demande_cumulee_X : 
+9.0	6.0	
+8.0	5.0	
+
+demande_cumulee_W : 
+6.0	9.0	
+5.0	8.0	
+
+capacite_residuelle_X : 
+7.0	13.0	
+10.0	12.0	
+
+capacite_residuelle_W : 
+5.800000000000001	9.7	
+10.399999999999999	9.100000000000001	
+
+min_capacite_X : 
+16.0	17.0	
+
+min_capacite_W : 
+11.8	15.399999999999999	
+
+max_capacite_X : 
+19.0	18.0	
+
+max_capacite_W : 
+18.7	17.1	
+
+moy_capacite_X : 
+17.5	17.5	
+
+moy_capacite_W : 
+15.25	16.25	
+
+med_capacite_X : 
+17.5	17.5	
+
+med_capacite_W : 
+15.25	16.25	
+
+ecartType_capacite_X : 
+1.5	0.5	
+
+ecartType_capacite_W : 
+3.4499999999999993	0.8500000000000014	
+
+var_capacite_X : 
+2.25	0.25	
+
+var_capacite_W : 
+11.902499999999995	0.7225000000000024	
+
+covar_capacite_X : 
+4.5	0.5	
+
+covar_capacite_W : 
+23.80499999999999	1.4450000000000047	
+
+##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	nombre de noeuds : 20
+nombre de strates : 2
+nombre de centres : 2
+titre : fenetre
+instances : alea20_2_1
+temps de calcul : 0.0004799365997314453
+valeur objective : 203.0
+nombre de solutions : 1
+nombre de noeuds : 0.0
+faisability : True
+centre : [14, 8]
+moy_distances :	36.07
+min_distances :	11.0
+max_distances :	67.0
+var_distances :	153.44720221606644
+covar_distances :	153.85207610054158
+ecartType_distances :	12.387380764958605
+coef_variation	: 0.3433910629329056
+distances_centre_x :
+45.0	-1.0	17.0	37.0	30.0	16.0	13.0	36.0	0.0	-1.0	25.0	-1.0	34.0	15.0	-1.0	19.0	-1.0	12.0	27.0	17.0	
+45.0	54.0	-1.0	37.0	30.0	16.0	13.0	36.0	-1.0	30.0	-1.0	29.0	-1.0	-1.0	0.0	19.0	42.0	-1.0	-1.0	17.0	
+
+distances_centre_w :
+50.0	-1.0	30.0	37.0	45.0	29.0	28.0	36.0	15.0	-1.0	36.0	-1.0	49.0	30.0	-1.0	34.0	-1.0	27.0	42.0	32.0	
+50.0	54.0	-1.0	37.0	45.0	29.0	28.0	36.0	-1.0	41.0	-1.0	42.0	-1.0	-1.0	15.0	34.0	46.0	-1.0	-1.0	32.0	
+
+maxX :
+45.0	54.0	
+
+maxW :
+50.0	54.0	
+
+minX :
+0.0	0.0	
+
+minW :
+15.0	15.0	
+
+moyX :
+22.866666666666667	28.307692307692307	
+
+moyW :
+34.666666666666664	37.61538461538461	
+
+medX :
+19.0	30.0	
+
+medW :
+34.0	37.0	
+
+ecartTypeX :
+11.517329937485027	14.327942658609519	
+
+ecartTypeW :
+8.881941729649485	10.011827325245504	
+
+varX :
+132.64888888888885	205.2899408284024	
+
+varW :
+78.8888888888889	100.23668639053254	
+
+covarX :
+142.12380952380948	222.3974358974359	
+
+covarW :
+84.52380952380953	108.58974358974359	
+
+coef_variationX :
+0.5036733208812694	0.5061501482660972	
+
+coef_variationW :
+0.25620985758604287	0.2661630986261586	
+
+moy_distances_centre :	15.0
+min_distances_centre :	15.0
+max_distances_centre :	15.0
+med_distances_centre :	15.0
+ecartType_distances_centre :	0.0
+var_distances_centre :	0.0
+covar_distances_centre :	0.0
+coef_variation_distances_centre :	0.0
+capacite_X_temoin : 
+17.0	16.0	
+17.0	18.0	
+
+capacite_W_temoin : 
+11.1	16.8	
+15.1	17.4	
+
+demande_cumulee_X : 
+11.0	4.0	
+7.0	6.0	
+
+demande_cumulee_W : 
+4.0	11.0	
+6.0	7.0	
+
+capacite_residuelle_X : 
+6.0	12.0	
+10.0	12.0	
+
+capacite_residuelle_W : 
+7.1	5.800000000000001	
+9.1	10.399999999999999	
+
+min_capacite_X : 
+16.0	17.0	
+
+min_capacite_W : 
+11.1	15.1	
+
+max_capacite_X : 
+17.0	18.0	
+
+max_capacite_W : 
+16.8	17.4	
+
+moy_capacite_X : 
+16.5	17.5	
+
+moy_capacite_W : 
+13.95	16.25	
+
+med_capacite_X : 
+16.5	17.5	
+
+med_capacite_W : 
+13.95	16.25	
+
+ecartType_capacite_X : 
+0.5	0.5	
+
+ecartType_capacite_W : 
+2.8500000000000005	1.1499999999999995	
+
+var_capacite_X : 
+0.25	0.25	
+
+var_capacite_W : 
+8.122500000000002	1.322499999999999	
+
+covar_capacite_X : 
+0.5	0.5	
+
+covar_capacite_W : 
+16.245000000000005	2.644999999999998	
+
+##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	##########	

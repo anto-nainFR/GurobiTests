@@ -37,7 +37,15 @@ def resultats(modele, resolution):
     if resolution == "MIP":
         print("MIPGap : ", modele.MIPGap)
 
+    # on détecte les centres avec les variables y
+    centres = []
+    for i in range (nnodes):
+        if y[i].X > 0.5:
+            centres.append(i)
+    print("Centres choisis : ", centres)
 
+
+    return modele.ObjVal, modele.ObjBound, modele.NodeCount, modele.Runtime, modele.SolCount, centres
 
 if __name__ == "__main__":
     assert(len(sys.argv) == 5), "Usage: python solver.py <filename> <objectiveFunction> <csv> <method : LP or MIP>"
@@ -47,7 +55,11 @@ if __name__ == "__main__":
     csv_file = sys.argv[3]
 
     # # lecture de l'instance
-    nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, alpha = lectureInstances(sys.argv[1])
+    instance_data = lectureInstances(sys.argv[1])
+    if instance_data is None:
+        print(f"Erreur : lectureInstances('{sys.argv[1]}') a retourné None. Vérifiez le fichier d'entrée.")
+        sys.exit(1) 
+    nnodes, p, nbS, maxDist, distances, capacity, demand, stratum, stratumCenter, alpha = instance_data
     
     # displayInstances(maxDist, distances, capacity, demand, stratum, stratumCenter)
 
@@ -56,31 +68,61 @@ if __name__ == "__main__":
     modele = setParameters(modele)
 
     modele.optimize()
-
-    try:
-        LB_val_pre = modele.ObjBound
-        UB_val_pre = modele.ObjVal
-    except:
+    result = resultats(modele, sys.argv[4])
+    if result is not None:
+        objVal, objBound, nodeCount, runTime, solCount, centres = result
+        try:
+            LB_val_pre = modele.ObjBound
+            UB_val_pre = modele.ObjVal
+        except:
+            LB_val_pre = "None"
+            UB_val_pre = "None"
+    
+        if modele.Status == GRB.OPTIMAL:
+            with open(csv_file, "a") as f:
+                f.write(f"{sys.argv[1]}\t{nnodes}\t{p}\t{nbS}\t{runTime}\t{objBound}\t{objVal}\n")
+                for centre in centres:
+                    f.write(f"{centre} ")
+                f.write("\n")
+    
+    else:
         LB_val_pre = "None"
         UB_val_pre = "None"
 
 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     print("--"*30)
 
-    modele = ajoutContraintes(modele, x, w, y, As, Bs, nnodes, nbS, stratum, stratumCenter, distances, demand, capacity, alpha)
+    # modele = ajoutContraintes(modele, x, w, y, As, Bs, nnodes, nbS, stratum, stratumCenter, distances, demand, capacity, alpha)
 
-    modele.optimize()
+    # modele.optimize()
 
-    try:
-        LB_val_post = modele.ObjBound
-        UB_val_post = modele.ObjVal
-    except:
-        LB_val_post = "None"
-        UB_val_post = "None"
+    # resultats(modele, sys.argv[4])
+    # print("--"*30)
+    # try:
+    #     LB_val_post = modele.ObjBound
+    #     UB_val_post = modele.ObjVal
+    # except:
+    #     LB_val_post = "None"
+    #     UB_val_post = "None"
 
-    # écriture dans un fichier csv
-    with open(csv_file, "a") as f:
-        f.write(f"{sys.argv[1]}\t{nnodes}\t{p}\t{nbS}\t{modele.status}\t{modele.Runtime}\t{objectiveFunction}\t{LB_val_pre}\t{UB_val_pre}\t{LB_val_post}\t{UB_val_post}\n")
+    # # écriture dans un fichier csv
+    # with open(csv_file, "a") as f:
+    #     f.write(f"{sys.argv[1]}\t{nnodes}\t{p}\t{nbS}\t{modele.status}\t{modele.Runtime}\t{objectiveFunction}\t{LB_val_pre}\t{UB_val_pre}\t{LB_val_post}\t{UB_val_post}\n")
 
 
 
